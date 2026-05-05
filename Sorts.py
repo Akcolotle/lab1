@@ -38,6 +38,13 @@ if __name__ == "__main__":
     import random
     import time
 
+    arr_small = [random.randint(0, 100) for _ in range(20)]
+    print("Original:", arr_small)
+    print("Bubble:", bubble_sort(arr_small.copy()))
+    print("Binary:", binary_sort(arr_small.copy()))
+
+    print()
+
     arr = [random.randint(0, 10000) for _ in range(10000)]
 
     arr1 = arr.copy()
