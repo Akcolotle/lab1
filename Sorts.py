@@ -6,6 +6,7 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
 
+
 def binary_search(arr, val, start, end):
     if start == end:
         return start if arr[start] > val else start + 1
@@ -31,6 +32,7 @@ def binary_sort(arr):
         arr = arr[:j] + [val] + arr[j:i] + arr[i + 1:]
 
     return arr
+
 
 if __name__ == "__main__":
     import random
